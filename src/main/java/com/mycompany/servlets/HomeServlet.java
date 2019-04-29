@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.mycompany.servlets;
 
 import javax.servlet.ServletException;
@@ -14,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 /**
  * Сервлет, который работает со страницей home
- * @author Karl
+ * 
  */
 @WebServlet("/home")
 public class HomeServlet extends HttpServlet{
@@ -23,7 +19,6 @@ public class HomeServlet extends HttpServlet{
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.getServletContext().getRequestDispatcher("/jsp/home.jsp").forward(req, resp);
     }
-
     // обработка запроса, который должен поменять цвет заголовка
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

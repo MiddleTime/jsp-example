@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.mycompany.filters;
 
+package com.mycompany.filters;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
@@ -14,7 +9,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 /**
  *Класс-фильтр, выполняет обработку запроса до того, как он будет обработан сервлетами.
- * @author Karl
+ *
  */
 @WebFilter("/home")
 public class AuthFilter implements Filter{
