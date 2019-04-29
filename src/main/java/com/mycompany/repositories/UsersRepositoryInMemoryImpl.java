@@ -1,21 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.mycompany.repositories;
 
 import com.mycompany.fake.FakeStorage;
 import com.mycompany.models.User;
 
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
-/**
- *
- * @author Karl
- */
+
 public class UsersRepositoryInMemoryImpl implements UsersRepository{
+    @Override
     public List<User> findAll() {
         return FakeStorage.storage().users();
     }
